@@ -1,3 +1,5 @@
+This is a fork from https://github.com/recogizer/angular-gauge-chart
+
 # Angular Gauge Chart
 
 This is an angular wrap-over for the library [gauge-chart](https://github.com/recogizer/gauge-chart)
