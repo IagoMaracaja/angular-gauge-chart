@@ -78,6 +78,7 @@ export class GaugeChartComponent implements OnInit, OnChanges, DoCheck {
 
   ngDoCheck() {
     if (!this.areEqual(this.options, this.oldOptions)) {
+      console.warn('drawing the chart: ', this.element)
       this.drawChart(true)
       this.oldOptions = JSON.parse(JSON.stringify(this.options))
     }

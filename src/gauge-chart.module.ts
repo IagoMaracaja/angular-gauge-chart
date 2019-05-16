@@ -1,4 +1,9 @@
-import { Component, NgModule } from '@angular/core'
+import {
+  Component,
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  NO_ERRORS_SCHEMA,
+} from '@angular/core'
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -13,6 +18,7 @@ import { GaugeChartComponent } from './gauge-chart'
 @NgModule({
   bootstrap: [GaugeChartComponent],
   declarations: [GaugeChartComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   /**
    * Import Angular's modules.
    */
